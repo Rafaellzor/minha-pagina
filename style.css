@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+
+*{                                  /* * seleciona tudo */
+    padding: 3px;
+    margin: 0%;
+}
+body{
+    height: 100%;                   /* utilizar toda altura do corpo */
+    box-sizing: border-box;         /* alementos n sairem para fora */
+    background-color:black;
+    color:white;
+}
+.destaque {
+    color: orange;
+    font-family: 'Arvo', serif;
+    display: flex;
+    justify-content: center;
+}
+.conteudo{
+    display: flex;                  /* alinhar conteudo em linha */
+    align-items: center;            /* alinhar itens no centro */
+    justify-content: space-between; /* espaço entre os elementos selecionados FLEXBOX */
+    margin: 4%;                     /* margem apenas dos elementos */
+}
+.fonte1 {
+    font-size: 2.25rem;
+}
+.fonte2 {
+    font-size: 1.75rem;
+    font-family: 'Raleway', sans-serif;
+}
+.botoes {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.estilizacaoBotoes{
+   /* background-color: #C7003F;*/
+    border:2px outset orange;     /* estilo da borda botoes */
+    width: 200px;                   /* largura do botao */
+    font-size: 1.37rem;                /* auto explicativo, né? */
+    text-align: center;             /* não é necesasario flex */
+    border-radius: 14px;            /* tem diferença entre % e px */
+    padding: 10px 3px;              /* altura no botao */
+    color:white;
+    text-decoration: none;
+}
+.estilizacaoBotoes:hover{           /* efeito botao */
+    background-color: #272727;
+}
+.minhaimagem{
+    width: 30%;
+}
+.linkcabecalho{                     /* inicio home */
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.06rem;
+    font-weight: 600;
+    color:orange;
+    text-decoration: none;
+}
+.teste{
+    display: flex;
+    padding: 0px 160px;
+    gap: 70px;
+}
+@media only screen and (max-width : 800px){ /*condicao abaixo 800 */
+    .conteudo{
+        flex-direction: column-reverse;
+    }
+}
